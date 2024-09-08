@@ -14,50 +14,42 @@
       background-color: #f5f5f5;
     }
     .content {
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 0 auto;
       padding: 40px 20px;
     }
     .header {
       display: flex;
-      justify-content: space-between;
       align-items: flex-start;
       margin-bottom: 40px;
     }
-    .left-section {
-      flex: 1;
-      padding-right: 40px;
-    }
-    .right-section {
-      flex: 0 0 300px;
-      text-align: center;
-    }
     .profile-image {
-      width: 200px;
-      height: 200px;
+      width: 250px;
+      height: 250px;
       object-fit: cover;
-      margin-bottom: 20px;
+      margin-right: 40px;
+    }
+    .info-section {
+      flex: 1;
     }
     h1 {
-      font-size: 48px;
+      font-size: 36px;
       margin: 0 0 10px 0;
       color: #2c3e50;
     }
     h2 {
-      font-size: 24px;
+      font-size: 18px;
       font-weight: normal;
       color: #7f8c8d;
       margin: 0 0 20px 0;
     }
     .contact {
-      font-style: italic;
-      color: #7f8c8d;
       margin-bottom: 20px;
     }
     .profile-links {
       display: flex;
-      flex-direction: column;
-      gap: 10px;
+      gap: 15px;
+      margin-bottom: 20px;
     }
     .profile-links a {
       display: inline-flex;
@@ -118,14 +110,17 @@
     @media (max-width: 768px) {
       .header {
         flex-direction: column;
+        align-items: center;
       }
-      .left-section, .right-section {
-        width: 100%;
-        padding-right: 0;
+      .profile-image {
+        margin-right: 0;
+        margin-bottom: 20px;
+      }
+      .info-section {
         text-align: center;
       }
       .profile-links {
-        align-items: center;
+        justify-content: center;
       }
       .paper {
         flex-direction: column;
@@ -142,22 +137,10 @@
 <body>
   <div class="content">
     <div class="header">
-      <div class="left-section">
+      <img src="your-photo.jpg" alt="Ava Kouhana" class="profile-image">
+      <div class="info-section">
         <h1>Ava Kouhana</h1>
         <h2>MS Student @Stanford ICME (Computational and Mathematical Engineering)</h2>
-        <div class="bio">
-          <p>I am a French master's student specializing in Artificial Intelligence and Statistics. Before commencing my 
-research at Stanford University, I dedicated six months to conducting research at Harvard University's Ophthalmology 
-Department. During this time, my focus was primarily on Computer Vision tasks (Image Segmentation, Vision-Language Models), as 
-well as Diffusion models.</p>
-          <p>I am pleased to have joined Stanford in February 2024 for a six-month research opportunity in the Radiology 
-Department under the supervision of Dr. Craig Levin where I worked primarily on Super-Resolution leveraging Latent Diffusion 
-Models. From September 2024, I am fortunate to be joining Stanford for the ICME (Computational and Mathematical Engineering) 
-Master's degree.</p>
-        </div>
-      </div>
-      <div class="right-section">
-        <img src="your-photo.jpg" alt="Ava Kouhana" class="profile-image">
         <p class="contact">akouhana (at) stanford.edu</p>
         <div class="profile-links">
           <a href="https://profiles.stanford.edu/intranet/ava-kouhana?tab=bio">
@@ -184,6 +167,16 @@ fill="#4285F4"/>
             <img src="/api/placeholder/24/24" alt="LinkedIn logo" />
             LinkedIn
           </a>
+        </div>
+        <div class="bio">
+          <p>I am a French master's student specializing in Artificial Intelligence and Statistics. Before commencing my 
+research at Stanford University, I dedicated six months to conducting research at Harvard University's Ophthalmology 
+Department. During this time, my focus was primarily on Computer Vision tasks (Image Segmentation, Vision-Language Models), as 
+well as Diffusion models.</p>
+          <p>I am pleased to have joined Stanford in February 2024 for a six-month research opportunity in the Radiology 
+Department under the supervision of Dr. Craig Levin where I worked primarily on Super-Resolution leveraging Latent Diffusion 
+Models. From September 2024, I am fortunate to be joining Stanford for the ICME (Computational and Mathematical Engineering) 
+Master's degree.</p>
         </div>
       </div>
     </div>
