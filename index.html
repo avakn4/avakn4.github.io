@@ -1,140 +1,206 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="static/style.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/water.css@2/out/light.css">
   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ava Kouhana - AI and Statistics Researcher</title>
   <style>
-    #container {
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 20px;
+      background-color: #f5f5f5;
+    }
+    .container {
+      background-color: white;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+      padding: 30px;
+      margin-bottom: 20px;
+    }
+    .header {
       display: flex;
-      align-items: flex-start;
+      align-items: center;
+      margin-bottom: 20px;
     }
-    #image-section {
-      flex: 0 0 200px; /* Adjust the width as needed */
-      margin-right: 20px;
+    .profile-image {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 30px;
     }
-    #image-section img {
-      width: 100%;
-      height: auto;
-      border-radius: 5px;
+    h1 {
+      margin: 0;
+      color: #2c3e50;
     }
-    #info-section {
-      flex: 1;
+    .contact {
+      font-style: italic;
+      color: #7f8c8d;
     }
     .profile-links {
       display: flex;
-      gap: 10px;
+      gap: 15px;
+      margin-top: 15px;
     }
     .profile-links a {
       display: inline-flex;
       align-items: center;
       text-decoration: none;
-      color: inherit;
+      color: #3498db;
+      transition: color 0.3s;
+    }
+    .profile-links a:hover {
+      color: #2980b9;
     }
     .profile-links svg {
-      width: 24px;
-      height: 24px;
+      width: 20px;
+      height: 20px;
       margin-right: 5px;
+    }
+    .dropdown {
+      margin-top: 20px;
+    }
+    .dropdown-btn {
+      background-color: #3498db;
+      color: white;
+      padding: 10px 15px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 16px;
+    }
+    .dropdown-content {
+      display: none;
+      background-color: #f9f9f9;
+      border-radius: 4px;
+      padding: 15px;
+      margin-top: 10px;
+    }
+    .paper {
+      display: flex;
+      margin-bottom: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid #ecf0f1;
+    }
+    .paper:last-child {
+      border-bottom: none;
+    }
+    .paper-image {
+      width: 100px;
+      height: 100px;
+      object-fit: cover;
+      margin-right: 20px;
+      border-radius: 4px;
+    }
+    .paper-info {
+      flex: 1;
+    }
+    .paper-title {
+      margin: 0 0 10px 0;
+      font-size: 18px;
+      color: #2c3e50;
+    }
+    .paper-authors {
+      margin-bottom: 5px;
+    }
+    .paper-details {
+      font-style: italic;
+      color: #7f8c8d;
     }
   </style>
 </head>
 <body>
-  <!-- Intro -->
-  <div id="container">
-    <div id="image-section">
-      <img src="your-photo.jpg" alt="Ava Kouhana">
+  <div class="container">
+    <div class="header">
+      <img src="your-photo.jpg" alt="Ava Kouhana" class="profile-image">
+      <div>
+        <h1>Ava Kouhana</h1>
+        <p class="contact">akouhana (at) stanford.edu</p>
+        <div class="profile-links">
+          <a href="https://profiles.stanford.edu/intranet/ava-kouhana?tab=bio">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 
+1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
+              <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+              <line x1="12" y1="22.08" x2="12" y2="12"></line>
+            </svg>
+            Stanford Profile
+          </a>
+          <a href="https://scholar.google.com/citations?user=nxESuB0AAAAJ&hl=fr">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
+              <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 
+11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
+              <path d="M12 14l-6.16-3.422a12.083 12.083 0 00-.665 6.479A11.952 11.952 0 0112 20.055a11.952 
+11.952 0 016.824-2.998 12.078 12.078 0 00-.665-6.479L12 14z"></path>
+            </svg>
+            Google Scholar
+          </a>
+          <a href="https://www.linkedin.com/in/yonatano/">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" 
+stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 
+6-6z"></path>
+              <rect x="2" y="9" width="4" height="12"></rect>
+              <circle cx="4" cy="4" r="2"></circle>
+            </svg>
+            LinkedIn
+          </a>
+        </div>
+      </div>
     </div>
-    <div id="info-section">
-      <h2><strong>Ava Kouhana </strong></h2>
-      <p>
-        <strong>akouhana (at) stanford.edu</strong> 
-      </p>
-      <p>
-      I am a French master's student specializing in Artificial Intelligence and Statistics. Before commencing my research at Stanford University, I dedicated six months to 
-conducting research at Harvard University's Ophthalmology Department. During this time, my focus was primarily on Computer Vision tasks (Image Segmentation, Vision-Language 
-Models), as well as Diffusion models.
-      </p>
-      <p>
-      I am pleased to have joined Stanford in February 2024 for a six-month research opportunity in the Radiology Department under the 
-supervision of Dr. Craig Levin where I worked primarily on Super-Resolution leveraging Latent Diffusion Models. From September 2024, I am fortunate to joining Stanford for the 
-ICME ( Computational and Mathematical Engineering ) Master's degree.
-      </p>
-      <div class="profile-links">
-        <a href="https://profiles.stanford.edu/intranet/ava-kouhana?tab=bio">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"></path>
-            <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
-            <line x1="12" y1="22.08" x2="12" y2="12"></line>
-          </svg>
-          Stanford Profile
-        </a>
-        <a href="https://scholar.google.com/citations?user=nxESuB0AAAAJ&hl=fr">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M12 14l9-5-9-5-9 5 9 5z"></path>
-            <path d="M12 14l6.16-3.422a12.083 12.083 0 01.665 6.479A11.952 11.952 0 0012 20.055a11.952 11.952 0 00-6.824-2.998 12.078 12.078 0 01.665-6.479L12 14z"></path>
-            <path d="M12 14l-6.16-3.422a12.083 12.083 0 00-.665 6.479A11.952 11.952 0 0112 20.055a11.952 11.952 0 016.824-2.998 12.078 12.078 0 00-.665-6.479L12 14z"></path>
-          </svg>
-          Google Scholar
-        </a>
-        <a href="https://www.linkedin.com/in/yonatano/">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
-            <rect x="2" y="9" width="4" height="12"></rect>
-            <circle cx="4" cy="4" r="2"></circle>
-          </svg>
-          LinkedIn
-        </a>
+    <div class="bio">
+      <p>I am a French master's student specializing in Artificial Intelligence and Statistics. Before 
+commencing my research at Stanford University, I dedicated six months to conducting research at Harvard 
+University's Ophthalmology Department. During this time, my focus was primarily on Computer Vision tasks 
+(Image Segmentation, Vision-Language Models), as well as Diffusion models.</p>
+      <p>I am pleased to have joined Stanford in February 2024 for a six-month research opportunity in the 
+Radiology Department under the supervision of Dr. Craig Levin where I worked primarily on Super-Resolution 
+leveraging Latent Diffusion Models. From September 2024, I am fortunate to be joining Stanford for the 
+ICME (Computational and Mathematical Engineering) Master's degree.</p>
+    </div>
+    <div class="dropdown">
+      <button class="dropdown-btn" onclick="togglePublications()">View Publications</button>
+      <div id="publicationsDropdown" class="dropdown-content">
+        <div class="paper">
+          <img src="/api/placeholder/100/100" alt="FairSeg paper" class="paper-image">
+          <div class="paper-info">
+            <h3 class="paper-title">FairSeg: A Large-Scale Medical Image Segmentation Dataset for Fairness 
+Learning Using Segment Anything Model with Fair Error-Bound Scaling</h3>
+            <p class="paper-authors">Yu Tian*, Min Shi*, Yan Luo*, <strong>Ava Kouhana</strong>, Tobias 
+Elze, Mengyu Wang</p>
+            <p class="paper-details">ICLR, 2024</p>
+          </div>
+        </div>
+        <div class="paper">
+          <img src="/api/placeholder/100/100" alt="FairCLIP paper" class="paper-image">
+          <div class="paper-info">
+            <h3 class="paper-title">FairCLIP: Harnessing Fairness in Vision-Language Learning</h3>
+            <p class="paper-authors">Yan Luo*, Min Shi*, Muhammad Osama Khan*, Muhammad Muneeb Afzal, Hao 
+Huang, Shuaihang Yuan, Yu Tian, Luo Song, <strong>Ava Kouhana</strong>, Tobias Elze, Yi Fang, Mengyu 
+Wang</p>
+            <p class="paper-details">CVPR, 2024</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 
-  <!-- Papers -->
-  <div id="container">
-    <div id="papers-section">
-      <h3>Papers</h3>
-      <ul>
-        <li>
-          <h4 class="paper-title"><a href="https://openreview.net/pdf?id=qNrJJZAKI3">FairSeg: A Large-Scale Medical Image Segmentation Dataset for Fairness Learning 
-	Using Segment Anything Model with Fair Error-Bound Scaling</a></h4>
-          <p class="co-authors">Yu Tian*, Min Shi*,Yan Luo*,<strong> Ava Kouhana</strong>,Tobias Elze,Mengyu Wang. ICLR 2024.</p>
-        </li>
-        <li>
-          <h4 class="paper-title"><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Luo_FairCLIP_Harnessing_Fairness_in_Vision-Language_Learning_CVPR_2024_paper.pdf">FairCLIP: Harnessing 
-	Fairness in Vision-Language Learning</a></h4>
-          <p class="co-authors">Yan Luo* ,Min Shi*, Muhammad Osama Khan* ,Muhammad Muneeb Afzal, Hao Huang, Shuaihang Yuan,Yu Tian,Luo Song,<strong>Ava Kouhana</strong>, Tobias Elze, Yi Fang,Mengyu 
-	Wang. CVPR 2024.</p>
-        </li>
-      </ul>
-    </div>
-  </div>
-
-  <!-- Projects -->
-  <!-- <div id="container">
-    <div id="projects-section">
-      <h3>Software / Projects</h3>
-      <ul>
-      </ul>
-    </div>
-  </div> -->
-
-  <!-- Writing -->
-  <!-- <div id="container">
-    <div id="writing-section">
-      <h3>Writing</h3>
-      <ul>
-      </ul>
-    </div>
-  </div> -->
-
-  <!-- Misc -->
-  <!-- <div id="container">
-    <div id="misc-section" style="margin-bottom: 25px">
-      <h3>Misc</h3>
-    </div>
-  </div> -->
-
-  </div>
-
+  <script>
+    function togglePublications() {
+      var dropdown = document.getElementById("publicationsDropdown");
+      if (dropdown.style.display === "block") {
+        dropdown.style.display = "none";
+      } else {
+        dropdown.style.display = "block";
+      }
+    }
+  </script>
 </body>
 </html>
