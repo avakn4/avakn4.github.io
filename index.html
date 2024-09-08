@@ -24,12 +24,12 @@
       margin-bottom: 40px;
     }
     .left-section {
-      width: 250px;
+      width: 300px; /* Increased from 250px */
       margin-right: 40px;
     }
     .profile-image {
-      width: 250px;
-      height: 250px;
+      width: 300px; /* Increased from 250px */
+      height: 300px; /* Increased from 250px */
       object-fit: cover;
       margin-bottom: 20px;
     }
@@ -52,9 +52,9 @@
     .profile-links a:hover {
       color: #2980b9;
     }
-    .profile-links img, .profile-links svg {
-      width: 20px;
-      height: 20px;
+    .profile-links img {
+      width: 16px; /* Decreased from 20px */
+      height: 16px; /* Decreased from 20px */
       margin-right: 8px;
     }
     .info-section {
@@ -74,8 +74,14 @@
     .bio {
       margin-bottom: 40px;
     }
-    .research {
+    .publications {
       margin-top: 40px;
+    }
+    .publications h2 {
+      font-size: 28px;
+      font-weight: bold;
+      color: #2c3e50;
+      margin-bottom: 20px;
     }
     .paper {
       margin-bottom: 30px;
@@ -90,9 +96,9 @@
       margin-bottom: 15px;
     }
     .paper-image {
-      width: 150px;
-      height: 150px;
-      object-fit: cover;
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
       margin-right: 30px;
       border-radius: 4px;
     }
@@ -101,14 +107,8 @@
     }
     .paper-title {
       margin: 0 0 10px 0;
-      font-size: 20px;
-    }
-    .paper-title a {
-      color: #2c3e50;
-      text-decoration: none;
-    }
-    .paper-title a:hover {
-      text-decoration: underline;
+      font-size: 18px;
+      font-weight: bold;
     }
     .co-authors {
       font-style: italic;
@@ -118,6 +118,7 @@
     .paper-links {
       display: flex;
       gap: 10px;
+      margin-top: 10px;
     }
     .paper-link {
       display: inline-block;
@@ -170,19 +171,11 @@
           <p>akouhana@stanford.edu</p>
           <div class="profile-links">
             <a href="https://profiles.stanford.edu/intranet/ava-kouhana?tab=bio">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 124 124" width="20" height="20">
-                <path fill="#8C1515" d="M50,99.4C22.4,99.4,0,77,0,49.4s22.4-50,50-50s50,22.4,50,50S77.6,99.4,50,99.4z M50,9.4
-                  c-22.1,0-40,17.9-40,40s17.9,40,40,40s40-17.9,40-40S72.1,9.4,50,9.4z"/>
-                <path fill="#8C1515" 
-d="M79.5,52.9c0-12.6-10.2-22.8-22.8-22.8c-12.6,0-22.8,10.2-22.8,22.8c0,4.9,1.5,9.4,4.1,13.1
-                  
-c-2.1,1.9-3.4,4.6-3.4,7.6c0,5.7,4.6,10.3,10.3,10.3c2.9,0,5.5-1.2,7.4-3.1c1.9,1.9,4.5,3.1,7.4,3.1c5.7,0,10.3-4.6,10.3-10.3
-                  c0-3-1.3-5.7-3.4-7.6C78,62.3,79.5,57.8,79.5,52.9z"/>
-              </svg>
+              <img src="stanford-logo.png" alt="Stanford logo" width="24" height="24">
               Stanford Profile
             </a>
             <a href="https://scholar.google.com/citations?user=nxESuB0AAAAJ&hl=fr">
-              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="20" height="20">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
                 <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 
 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z" fill="#4285F4"/>
                 <path d="M12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14zm0 11c-2.209 0-4-1.791-4-4s1.791-4 4-4 4 1.791 4 4-1.791 4-4 4z" 
@@ -191,7 +184,7 @@ fill="#4285F4"/>
               Google Scholar
             </a>
             <a href="https://www.linkedin.com/in/yonatano/">
-              <img src="/api/placeholder/20/20" alt="LinkedIn logo" />
+              <img src="linkedin-logo.png" alt="LinkedIn logo" width="24" height="24">
               LinkedIn
             </a>
           </div>
@@ -212,8 +205,8 @@ Master's degree.</p>
         </div>
       </div>
     </div>
-    <div class="research">
-      <h2>Research</h2>
+    <div class="publications">
+      <h2>Publications</h2>
       <div class="paper">
         <div class="paper-content">
           <img src="images/fairseg-thumbnail.jpg" alt="FairSeg paper thumbnail" class="paper-image">
@@ -222,13 +215,13 @@ Master's degree.</p>
 Segment Anything Model with Fair Error-Bound Scaling</h3>
             <p class="co-authors">Yu Tian*, Min Shi*, Yan Luo*, <strong>Ava Kouhana</strong>, Tobias Elze, Mengyu Wang</p>
             <p>ICLR, 2024</p>
+            <div class="paper-links">
+              <a href="https://arxiv.org/pdf/2311.02189" class="paper-link" target="_blank">PDF</a>
+              <a href="https://github.com/Harvard-Ophthalmology-AI-Lab/FairSeg" class="paper-link" target="_blank">Code</a>
+              <a href="https://drive.google.com/drive/folders/1tyhEhYHR88gFkVzLkJI4gE1BoOHoHdWZ?usp=sharing" 
+class="paper-link" target="_blank">Dataset</a>
+            </div>
           </div>
-        </div>
-        <div class="paper-links">
-          <a href="https://arxiv.org/pdf/2311.02189" class="paper-link" target="_blank">PDF</a>
-          <a href="https://github.com/Harvard-Ophthalmology-AI-Lab/FairSeg" class="paper-link" target="_blank">Code</a>
-          <a href="https://drive.google.com/drive/folders/1tyhEhYHR88gFkVzLkJI4gE1BoOHoHdWZ?usp=sharing" class="paper-link" 
-target="_blank">Dataset</a>
         </div>
       </div>
       <div class="paper">
@@ -239,13 +232,13 @@ target="_blank">Dataset</a>
             <p class="co-authors">Yan Luo*, Min Shi*, Muhammad Osama Khan*, Muhammad Muneeb Afzal, Hao Huang, Shuaihang Yuan, 
 Yu Tian, Luo Song, <strong>Ava Kouhana</strong>, Tobias Elze, Yi Fang, Mengyu Wang</p>
             <p>CVPR, 2024</p>
-          </div>
-        </div>
-        <div class="paper-links">
-          <a href="https://arxiv.org/pdf/2403.19949" class="paper-link" target="_blank">PDF</a>
-          <a href="https://github.com/Harvard-Ophthalmology-AI-Lab/FairCLIP" class="paper-link" target="_blank">Code</a>
-          <a href="https://drive.google.com/drive/u/1/folders/1bkeifigwOAfnsLvup9mJOSNeA3WsvA2l" class="paper-link" 
+            <div class="paper-links">
+              <a href="https://arxiv.org/pdf/2403.19949" class="paper-link" target="_blank">PDF</a>
+              <a href="https://github.com/Harvard-Ophthalmology-AI-Lab/FairCLIP" class="paper-link" target="_blank">Code</a>
+              <a href="https://drive.google.com/drive/u/1/folders/1bkeifigwOAfnsLvup9mJOSNeA3WsvA2l" class="paper-link" 
 target="_blank">Dataset</a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
